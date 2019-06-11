@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Granule>
+    <GranuleUR>biosar1_roi_lidar17</GranuleUR>
+    <InsertTime>2019-01-30T14:34:05</InsertTime>
+    <LastUpdate>2019-01-30T14:34:05</LastUpdate>
+    <Collection>
+        <ShortName>biosar1</ShortName>
+        <VersionId>1</VersionId>
+    </Collection>
+    <DataGranule>
+        <SizeMBDataGranule>0.0015751953469589353</SizeMBDataGranule>
+        <DayNightFlag>BOTH</DayNightFlag>
+        <ProductionDateTime>2019-01-30T14:34:05</ProductionDateTime>
+    </DataGranule>
+    <Temporal>
+        <RangeDateTime>
+            <BeginningDateTime>2019-01-30T14:34:05</BeginningDateTime>
+            <EndingDateTime>2019-01-30T14:34:05</EndingDateTime>
+        </RangeDateTime>
+    </Temporal>
+    <Spatial>
+        <HorizontalSpatialDomain>
+            <Geometry>
+                <GPolygon>
+                    <Boundary>
+                        <Point>
+                            <PointLongitude>58.46830749511719</PointLongitude>
+                            <PointLatitude>13.630385398864746</PointLatitude>
+                        </Point>
+                        <Point>
+                            <PointLongitude>58.46830749511719</PointLongitude>
+                            <PointLatitude>13.620645523071289</PointLatitude>
+                        </Point>
+                        <Point>
+                            <PointLongitude>58.46364212036133</PointLongitude>
+                            <PointLatitude>13.620645523071289</PointLatitude>
+                        </Point>
+                        <Point>
+                            <PointLongitude>58.46364212036133</PointLongitude>
+                            <PointLatitude>13.630385398864746</PointLatitude>
+                        </Point>
+                        <Point>
+                            <PointLongitude>58.46830749511719</PointLongitude>
+                            <PointLatitude>13.630385398864746</PointLatitude>
+                        </Point>
+                    </Boundary>
+                </GPolygon>
+            </Geometry>
+        </HorizontalSpatialDomain>
+    </Spatial>
+    <MeasuredParameters>
+        <MeasuredParameter>
+            <ParameterName>FORESTS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>CANOPY CHARACTERISTICS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>FOREST COMPOSITION/VEGETATION STRUCTURE</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>TOPOGRAPHIC EFFECTS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>BIOMASS</ParameterName>
+        </MeasuredParameter>
+    </MeasuredParameters>
+    <AdditionalAttributes>
+        <AdditionalAttribute>
+            <Name>SubRegion</Name>
+            <Values>
+                <Value>not yet implemented</Value>
+            </Values>
+        </AdditionalAttribute>
+    </AdditionalAttributes>
+    <Price>0</Price>
+    <OnlineAccessURLs>
+        <OnlineAccessURL>
+            <URL>https://oss.eu-west-0.prod-cloud-ocb.orange-business.com/bmap-catalogue-data/Campaign_data/biosar1/biosar1_roi_lidar17.shp</URL>
+            <URLDescription>This link provides direct download access to the granule.</URLDescription>
+            <MimeType>MimeType</MimeType>
+        </OnlineAccessURL>
+    </OnlineAccessURLs>
+    <Orderable>false</Orderable>
+    <DataFormat>GTiff</DataFormat>
+</Granule>

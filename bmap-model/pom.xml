@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.biomass</groupId>
+		<artifactId>bmap-root</artifactId>
+		<version>0.3.0-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>com.esa.bmap</groupId>
+	<artifactId>bmap-model</artifactId>
+	<name>bmap-model</name>
+
+
+
+	<url>http://maven.apache.org</url>
+	<description>Project containing all model of the bmap platform</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- <elasticsearch.version>6.1.3</elasticsearch.version> -->
+	</properties>
+
+
+	<repositories>
+		<repository>
+			<id>spring-libs-snapshot</id>
+			<name>Spring Snapshot Repository</name>
+			<url>http://repo.spring.io/libs-snapshot</url>
+		</repository>
+		<repository>
+			<id>OSGEO GeoTools repo</id>
+			<url>http://download.osgeo.org/webdav/geotools</url>
+		</repository>
+		<repository>
+			<id>Hibernate Spatial repo</id>
+			<url>http://www.hibernatespatial.org/repository</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- bmap-service uses bmap-common -->
+		<dependency>
+			<groupId>com.esa.bmap</groupId>
+			<artifactId>bmap-common</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.data</groupId> -->
+		<!-- <artifactId>spring-data-elasticsearch</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.elasticsearch.client</groupId> -->
+		<!-- <artifactId>transport</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.elasticsearch</groupId> -->
+		<!-- <artifactId>elasticsearch</artifactId> -->
+		<!-- </dependency> -->
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-spatial</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.bedatadriven</groupId>
+			<artifactId>jackson-datatype-jts</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+	</dependencies>
+	<!-- <build> <plugins> <plugin> <groupId>io.swagger</groupId> <artifactId>swagger-codegen-maven-plugin</artifactId> 
+		<version>2.3.1</version> <executions> <execution> <goals> <goal>generate</goal> 
+		</goals> <configuration> inputSpec indicates which file you want to use to 
+		generate <inputSpec>${project.basedir}\src\main\resources\swagger.yml</inputSpec> 
+		<output>${project.basedir}</output> <invokerPackage>com.esa.bmap.api</invokerPackage> 
+		<generateApis>false</generateApis> <generateApiTests>false</generateApiTests> 
+		<generateApiDocumentation>false</generateApiDocumentation> <generateModels>true</generateModels> 
+		<generateModelTests>true</generateModelTests> <generateModelDocumentation>false</generateModelDocumentation> 
+		<generateSupportingFiles>false</generateSupportingFiles> <hideGenerationTimestamp>true</hideGenerationTimestamp> 
+		<language>spring</language> <library>spring-boot</library> <includeConstructors>true</includeConstructors> 
+		model package where you want to generate the code <modelPackage>com.esa.bmap.model</modelPackage> 
+		<configOptions> <dateLibrary>java8-localdatetime</dateLibrary> <java8>true</java8> 
+		</configOptions> <typeMappings> <typeMapping>OffsetDateTime=LocalDateTime</typeMapping> 
+		</typeMappings> <importMappings> <importMapping>java.time.OffsetDateTime=java.time.LocalDateTime</importMapping> 
+		</importMappings> </configuration> </execution> </executions> </plugin> </plugins> 
+		<pluginManagement> <plugins> This plugin's configuration is used to store 
+		Eclipse m2e settings only. It has no influence on the Maven build itself. 
+		<plugin> <groupId>org.eclipse.m2e</groupId> <artifactId>lifecycle-mapping</artifactId> 
+		<version>1.0.0</version> <configuration> <lifecycleMappingMetadata> <pluginExecutions> 
+		<pluginExecution> <pluginExecutionFilter> <groupId>io.swagger</groupId> <artifactId> 
+		swagger-codegen-maven-plugin </artifactId> <versionRange> [2.3.1,) </versionRange> 
+		<goals> <goal>generate</goal> </goals> </pluginExecutionFilter> <action> 
+		<ignore></ignore> </action> </pluginExecution> </pluginExecutions> </lifecycleMappingMetadata> 
+		</configuration> </plugin> </plugins> </pluginManagement> </build> -->
+
+</project>

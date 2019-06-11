@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Granule>
+    <GranuleUR>AfriSAR_Mondah_Field_Data.Mondah_Field_Data_OrigCoords.csv</GranuleUR>
+    <InsertTime>2018-10-29T00:00:00Z</InsertTime>
+    <LastUpdate>2018-10-29T20:04:03Z</LastUpdate>
+    <Collection>
+        <ShortName>AfriSAR_Mondah_Field_Data_1580</ShortName>
+        <VersionId>1</VersionId>
+    </Collection>
+    <DataGranule>
+        <SizeMBDataGranule>0.022066</SizeMBDataGranule>
+        <DayNightFlag>BOTH</DayNightFlag>
+        <ProductionDateTime>2018-10-29T00:00:00Z</ProductionDateTime>
+    </DataGranule>
+    <Temporal>
+        <RangeDateTime>
+            <BeginningDateTime>2016-03-01T00:00:00Z</BeginningDateTime>
+            <EndingDateTime>2016-03-23T00:00:00Z</EndingDateTime>
+        </RangeDateTime>
+    </Temporal>
+    <Spatial>
+        <HorizontalSpatialDomain>
+            <Geometry>
+                <BoundingRectangle>
+                    <WestBoundingCoordinate>9.31622</WestBoundingCoordinate>
+                    <NorthBoundingCoordinate>0.616939</NorthBoundingCoordinate>
+                    <EastBoundingCoordinate>9.42251</EastBoundingCoordinate>
+                    <SouthBoundingCoordinate>0.538705</SouthBoundingCoordinate>
+                </BoundingRectangle>
+            </Geometry>
+        </HorizontalSpatialDomain>
+    </Spatial>
+    <MeasuredParameters>
+        <MeasuredParameter>
+            <ParameterName>VEGETATION SPECIES</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>FOREST COMPOSITION/VEGETATION STRUCTURE</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>DOMINANT SPECIES</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>BIOMASS</ParameterName>
+        </MeasuredParameter>
+    </MeasuredParameters>
+    <Platforms>
+        <Platform>
+            <ShortName>FIELD SURVEYS</ShortName>
+            <Instruments>
+                <Instrument>
+                    <ShortName>STEEL MEASURING TAPE</ShortName>
+                </Instrument>
+                <Instrument>
+                    <ShortName>VISUAL OBSERVATIONS</ShortName>
+                </Instrument>
+            </Instruments>
+        </Platform>
+        <Platform>
+            <ShortName>FIELD INVESTIGATION</ShortName>
+            <Instruments>
+                <Instrument>
+                    <ShortName>CLINOMETERS</ShortName>
+                </Instrument>
+            </Instruments>
+        </Platform>
+    </Platforms>
+    <Campaigns>
+        <Campaign>
+            <ShortName>AfriSAR</ShortName>
+        </Campaign>
+    </Campaigns>
+    <Price>0</Price>
+    <OnlineAccessURLs>
+        <OnlineAccessURL>
+            <URL>https://daac.ornl.gov/daacdata/afrisar/AfriSAR_Mondah_Field_Data/data/Mondah_Field_Data_OrigCoords.csv</URL>
+            <URLDescription>This link provides direct download access to the granule.</URLDescription>
+        </OnlineAccessURL>
+    </OnlineAccessURLs>
+    <OnlineResources>
+        <OnlineResource>
+            <URL>https://daac.ornl.gov/AFRISAR/guides/AfriSAR_Mondah_Field_Data.html</URL>
+            <Description>ORNL DAAC Data Set Documentation</Description>
+            <Type>USERS GUIDE</Type>
+        </OnlineResource>
+        <OnlineResource>
+            <URL>https://dx.doi.org/10.3334/ORNLDAAC/1580</URL>
+            <Description>Data set Landing Page DOI URL</Description>
+            <Type>DATA SET LANDING PAGE</Type>
+        </OnlineResource>
+        <OnlineResource>
+            <URL>https:/daac.ornl.gov/daacdata/afrisar/AfriSAR_Mondah_Field_Data/comp/AfriSAR_Mondah_Field_Data.pdf</URL>
+            <Description>Data Set Documentation</Description>
+            <Type>GENERAL DOCUMENTATION</Type>
+        </OnlineResource>
+    </OnlineResources>
+    <Orderable>false</Orderable>
+    <DataFormat>CSV</DataFormat>
+</Granule>

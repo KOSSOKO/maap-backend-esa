@@ -1,0 +1,463 @@
+swagger: '2.0'
+info:
+  title: Simple API overview
+  version: v2
+paths:
+  /data:
+    get:
+      tags:
+      - data
+      summary: Return a data
+      operationId: getUserById
+      produces:
+      - application/json
+      parameters:
+      - in: path
+        name: id
+        description: the id of the data
+        required: true
+        type: integer
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
+        default:
+          description: error
+    put:
+      tags:
+      - data
+      summary: add data
+      operationId: addData
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: id
+        required: true
+        schema:
+          $ref: '#/definitions/Data'
+      responses:
+        400:
+          description: Invalid ID supplied
+        404:
+          description: Pet not found
+        405:
+          description: Validation exception
+definitions: 
+  Algorithm: 
+    properties: 
+      algorithmId: 
+        description: "Unique identifier representing a specific Algorithm."
+        format: int64
+        type: integer
+      algorithm_name: 
+        description: "name of the Algorithm."
+        type: string
+      applicationZone: 
+        description: "specify what king of coordinate work with an algorithm."
+        type: string
+      averageTime: 
+        description: "indicate the average time of execution of an algorithm."
+        type: string
+      chain: 
+        items: 
+          $ref: '#/definitions/ChainAlgorithm'
+        type: array
+      configurationFile: 
+        description: " Contain configuration that an algorithm need. it's an url"
+        type: string
+      currentVer: 
+        description: "the current version of an algorithm."
+        format: int64
+        type: integer
+      documentation: 
+        description: "documentation of the algorithm and how we can use identifier. it's an url"
+        type: string
+      executable: 
+        $ref: '#/definitions/Executable'
+      icon: 
+        description: "Image URL representing the algorithm."
+        type: string
+      input: 
+        description: "indicate the input data to show it as an exemple."
+        items: 
+          $ref: '#/definitions/Data'
+        type: array
+      output: 
+        description: "indicate the output data to show it as an exemple."
+        items: 
+          $ref: '#/definitions/Data'
+        type: array
+      privacy: 
+        enum: 
+          - private 
+          - public
+        type: string
+      project: 
+        $ref: '#/definitions/Project'
+      status: 
+        enum: 
+          - approved
+          - toBeApproved
+        type: string
+    type: object
+  ChainAlgorithm: 
+    properties: 
+      ChainAlgorithmId: 
+        description: "Unique identifier representing a specific chain."
+        format: int64
+        type: integer
+      algoChain: 
+        items: 
+          $ref: '#/definitions/Algorithm'
+        type: array
+      chainName: 
+        description: "name of the chain."
+        type: string
+    type: object
+  Data: 
+    discriminator: dataType
+    properties: 
+      dataId: 
+        description: "Unique identifier representing a specific Data."
+        format: int64
+        type: integer
+      dataSize: 
+        description: "size of the Data"
+        format: float
+        type: number
+      fileName: 
+        description: "Data name"
+        type: string
+      tag: 
+        description: "tag of the data"
+        type: string
+      uploadDate: 
+        description: "upload Date of the data"
+        format: date
+        type: string
+      url: 
+        description: "url of the Data"
+        type: string
+    type: object
+  Executable: 
+    properties: 
+      executableId: 
+        description: "Unique identifier representing a specific Executable."
+        format: int64
+        type: integer
+      executableName: 
+        description: "name of the Executable."
+        type: string
+      url: 
+        description: "url of the Executable"
+        type: string
+    type: object
+  Project: 
+    properties: 
+      listAlgo: 
+        items: 
+          $ref: '#/definitions/Algorithm'
+        type: array
+      projectId: 
+        description: "Unique identifier representing a specific project."
+        format: int64
+        type: integer
+      projectName: 
+        description: "name of the Project."
+        type: string
+      topic: 
+        $ref: '#/definitions/Topic'
+    type: object
+  SystemRessource: 
+    properties: 
+      cpu: 
+        description: "cpu allowed for the user use"
+        items: 
+          format: float
+          type: number
+        type: array
+      id: 
+        description: "Unique identifier representing a specific SystemRessource"
+        format: int64
+        type: integer
+      ram: 
+        description: "ram allowed dir the user to use"
+        items: 
+          format: float
+          type: number
+        type: array
+      storage: 
+        description: "storage left for the user to use"
+        type: integer
+      user: 
+        $ref: '#/definitions/User'
+    type: object
+  Topic: 
+    properties: 
+      nameTopic: 
+        description: "name of the Topic."
+        type: string
+      projects: 
+        items: 
+          $ref: '#/definitions/Project'
+        type: array
+      topicId: 
+        description: "Unique identifier representing a specific Topic."
+        format: int64
+        type: integer
+    type: object
+  User: 
+    properties: 
+      systemRessource: 
+        $ref: '#/definitions/SystemRessource'
+      userId: 
+        description: "Unique identifier representing a specific user."
+        format: int64
+        type: integer
+    type: object
+  BiomassOfficialProduct:
+    allOf:
+      - $ref: '#/definitions/Data'
+      - type: object
+        properties:
+          startDate:
+            description: "start date for BiomassOfficialProduct"
+            format: date-time
+            type: string
+          endDate:
+            description: "end date for BiomassOfficialProduct"
+            format: date-time
+            type: string
+  RegionOfInterest:
+    allOf:
+      - $ref: '#/definitions/Data'
+      - type: object
+        properties:
+          name:
+            description: "name of the region of interest"
+            type: string
+          acquisitionDate:
+            description: "acquisitionDate of the region of interest"
+            format: date-time
+            type: string
+          listPoint:
+            items:
+              $ref: '#/definitions/Point'
+            type: array
+          listZonePolygon:
+            items:
+              $ref: '#/definitions/ZonePolygon'
+            type: array
+          groundCampaign:
+            $ref: '#/definitions/GroundCampaign'
+          subRegion:
+              $ref: '#/definitions/SubRegion'
+          quadrangle:
+            $ref: '#/definitions/Quadrangle'
+  AirbornData:
+    allOf:
+      - $ref: '#/definitions/Data'
+      - type: object
+        properties:
+          processingLevel:
+            description: "describe the processing level"
+            type: string
+          productType:
+            description: "product type of the airborn data (i.e:SLC)"
+            type: string
+          acquisitionDate:
+            description: "acquisitionDate of the airborn data"
+            format: date-time
+            type: string
+          instrument:
+            $ref: '#/definitions/Instrument'
+          quadrangle:
+            $ref: '#/definitions/Quadrangle'
+          polarisation:
+            enum:
+              - HH
+              - HV
+              - VH
+              - VV
+            type: string
+          geometryType:
+            type: string
+          subRegion:
+            $ref: '#/definitions/SubRegion'
+          groundCampaign:
+            $ref: '#/definitions/GroundCampaign'
+  SARRawData:
+    allOf:
+      - $ref: '#/definitions/Data'
+      - type: object
+        properties:
+          processingLevel:
+            description: "describe the processing level"
+            type: string
+          productType:
+            type: string
+          acquisitionDate:
+            description: "acquisitionDate of the region of the airborn data"
+            format: date-time
+            type: string
+          sensorMode:
+            $ref: '#/definitions/SensorMode'
+          satellite:
+            $ref: '#/definitions/Satellite'
+          quadrangle:
+            $ref: '#/definitions/Quadrangle'
+          polarisation:
+            enum:
+              - HH
+              - HV
+              - VH
+              - VV
+            type: string
+          orbitDirection:
+            enum:
+              - NONE
+              - DESENDING
+              - ASCENDING
+            type: string
+          geometryType:
+            type: string
+          orbitNumber:
+            type: integer
+          orbitCycle:
+            type: integer
+  Point:
+    properties:
+      id:
+        description: "unique identifier representing a specific Point"
+        format: int64
+        type: integer
+      type:
+        enum:
+          - XY
+          - LATLONG
+        type: string
+      RegionOfInterest:
+        $ref: '#/definitions/RegionOfInterest'
+      latX:
+        description: "latitude or X coordinate"
+        format: float
+        type: number
+      longY:
+        description: "longitude or Y coordinate"
+        format: float
+        type: number
+    type: object
+  ZonePolygon:
+    properties:
+      id:
+        description: "unique identifier representing a specific Point"
+        format: int64
+        type: integer
+      name:
+        description: "zone name"
+        type: string
+      regionOfInterest:
+        $ref: '#/definitions/RegionOfInterest'
+    type: object
+  GroundCampaign:
+    properties:
+      name:
+        type: string
+      id:
+        format: int64
+        type: integer
+      listRoi:
+        items:
+          $ref: '#/definitions/RegionOfInterest'
+        type: array
+      listSubRegion:
+        items:
+          $ref: '#/definitions/SubRegion'
+        type: array
+      listAirbornData:
+        items:
+          $ref: '#/definitions/AirbornData'
+        type: array
+    type: object
+  SubRegion:
+    properties:
+      id:
+        format: int64
+        type: integer
+      name:
+        type: string
+      listRoi:
+        items:
+          $ref: '#/definitions/RegionOfInterest'
+        type: array
+      groundCampaignData:
+        $ref: '#/definitions/GroundCampaign'
+      listAirbornData:
+        items:
+          $ref: '#/definitions/AirbornData'
+        type: array
+    type: object
+  Quadrangle:
+    properties:
+      id:
+        format: int64
+        type: integer
+      upperRight:
+        $ref: '#/definitions/Point'
+      upperLeft:
+        $ref: '#/definitions/Point'
+      lowerRight:
+        $ref: '#/definitions/Point'
+      lowerLeft:
+        $ref: '#/definitions/Point'
+      centre:
+        $ref: '#/definitions/Point'
+    type: object
+  Instrument:
+    properties:
+      id:
+        format: int64
+        type: integer
+      name:
+        type: string
+      description:
+        type: string
+    type: object
+  SensorMode:
+    properties:
+      id:
+        format: int64
+        type: integer
+      name:
+        type: string
+      description:
+        type: string
+      listSatellite:
+        items:
+          $ref: '#/definitions/Satellite'
+        type: array
+    type: object
+  Satellite:
+    properties:
+      id:
+        format: int64
+        type: integer
+      name:
+        type: string
+      description:
+        type: string
+      listSensorMode:
+        items:
+          $ref: '#/definitions/SensorMode'
+        type: array
+      listInstrument:
+        items:
+          $ref: '#/definitions/Instrument'
+        type: array
+    type: object

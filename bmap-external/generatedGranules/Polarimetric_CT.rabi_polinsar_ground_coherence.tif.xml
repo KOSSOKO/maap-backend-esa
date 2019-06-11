@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Granule>
+    <GranuleUR>Polarimetric_CT.rabi_polinsar_ground_coherence.tif</GranuleUR>
+    <InsertTime>2018-07-20T00:00:00Z</InsertTime>
+    <LastUpdate>2018-07-23T13:15:50Z</LastUpdate>
+    <Collection>
+        <ShortName>Polarimetric_CT_1601</ShortName>
+        <VersionId>1</VersionId>
+    </Collection>
+    <DataGranule>
+        <SizeMBDataGranule>17.67161</SizeMBDataGranule>
+        <DayNightFlag>BOTH</DayNightFlag>
+        <ProductionDateTime>2018-07-20T00:00:00Z</ProductionDateTime>
+    </DataGranule>
+    <Temporal>
+        <RangeDateTime>
+            <BeginningDateTime>2016-02-25T00:00:00Z</BeginningDateTime>
+            <EndingDateTime>2016-03-08T00:00:00Z</EndingDateTime>
+        </RangeDateTime>
+    </Temporal>
+    <Spatial>
+        <HorizontalSpatialDomain>
+            <Geometry>
+                <BoundingRectangle>
+                    <WestBoundingCoordinate>9.67778</WestBoundingCoordinate>
+                    <NorthBoundingCoordinate>-1.62694</NorthBoundingCoordinate>
+                    <EastBoundingCoordinate>10.1356</EastBoundingCoordinate>
+                    <SouthBoundingCoordinate>-2.06778</SouthBoundingCoordinate>
+                </BoundingRectangle>
+            </Geometry>
+        </HorizontalSpatialDomain>
+    </Spatial>
+    <MeasuredParameters>
+        <MeasuredParameter>
+            <ParameterName>FORESTS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>CANOPY CHARACTERISTICS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>FOREST COMPOSITION/VEGETATION STRUCTURE</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>TOPOGRAPHIC EFFECTS</ParameterName>
+        </MeasuredParameter>
+    </MeasuredParameters>
+    <Platforms>
+        <Platform>
+            <ShortName>G-III</ShortName>
+            <Instruments>
+                <Instrument>
+                    <ShortName>UAVSAR</ShortName>
+                </Instrument>
+            </Instruments>
+        </Platform>
+    </Platforms>
+    <Campaigns>
+        <Campaign>
+            <ShortName>AfriSAR</ShortName>
+        </Campaign>
+    </Campaigns>
+    <Price>0</Price>
+    <OnlineAccessURLs>
+        <OnlineAccessURL>
+            <URL>https://daac.ornl.gov/daacdata/afrisar/Polarimetric_CT/data/rabi_polinsar_ground_coherence.tif</URL>
+            <URLDescription>This link provides direct download access to the granule.</URLDescription>
+        </OnlineAccessURL>
+    </OnlineAccessURLs>
+    <OnlineResources>
+        <OnlineResource>
+            <URL>https://daac.ornl.gov/AFRISAR/guides/Polarimetric_CT.html</URL>
+            <Description>ORNL DAAC Data Set Documentation</Description>
+            <Type>USERS GUIDE</Type>
+        </OnlineResource>
+        <OnlineResource>
+            <URL>https://dx.doi.org/10.3334/ORNLDAAC/1601</URL>
+            <Description>Data set Landing Page DOI URL</Description>
+            <Type>DATA SET LANDING PAGE</Type>
+        </OnlineResource>
+        <OnlineResource>
+            <URL>https:/daac.ornl.gov/daacdata/afrisar/Polarimetric_CT/comp/AfriSAR_PolInSARWorkshop_Lavalle.pdf</URL>
+            <Description>Data Set Documentation</Description>
+            <Type>GENERAL DOCUMENTATION</Type>
+        </OnlineResource>
+        <OnlineResource>
+            <URL>https:/daac.ornl.gov/daacdata/afrisar/Polarimetric_CT/comp/Polarimetric_CT.pdf</URL>
+            <Description>Data Set Documentation</Description>
+            <Type>GENERAL DOCUMENTATION</Type>
+        </OnlineResource>
+    </OnlineResources>
+    <Orderable>false</Orderable>
+    <DataFormat>GTiff</DataFormat>
+</Granule>

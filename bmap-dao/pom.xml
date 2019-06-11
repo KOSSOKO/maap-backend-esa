@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.biomass</groupId>
+		<artifactId>bmap-root</artifactId>
+		<version>0.3.0-SNAPSHOT</version>
+	</parent>
+	
+	<groupId>com.esa.bmap</groupId>
+	<artifactId>bmap-dao</artifactId>
+	<version>0.3.0-SNAPSHOT</version>
+	<name>bmap-dao</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- <elasticsearch.version>6.1.3</elasticsearch.version> -->
+	</properties>
+
+	<dependencies>
+
+		<!-- bmap-service uses bmap-common -->
+		<dependency>
+			<groupId>com.esa.bmap</groupId>
+			<artifactId>bmap-common</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+		<!-- bmap-repository uses bmap-model -->
+		<dependency>
+			<groupId>com.esa.bmap</groupId>
+			<artifactId>bmap-model</artifactId>
+			<version>0.3.0-SNAPSHOT</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.data</groupId> -->
+		<!-- <artifactId>spring-data-elasticsearch</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.elasticsearch.client</groupId> -->
+		<!-- <artifactId>transport</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.elasticsearch</groupId> -->
+		<!-- <artifactId>elasticsearch</artifactId> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.data</groupId> -->
+		<!-- <artifactId>spring-data-elasticsearch</artifactId> -->
+		<!-- <version>3.0.8.RELEASE</version> -->
+		<!-- </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.elasticsearch.client/transport -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.elasticsearch.client</groupId> -->
+		<!-- <artifactId>transport</artifactId> -->
+		<!-- <version>6.1.3</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.elasticsearch</groupId> -->
+		<!-- <artifactId>elasticsearch</artifactId> -->
+		<!-- <version>6.1.3</version> -->
+		<!-- </dependency> -->
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-libs-snapshot</id>
+			<name>Spring Snapshot Repository</name>
+			<url>http://repo.spring.io/libs-snapshot</url>
+		</repository>
+	</repositories>
+
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.0</version>
+				<configuration>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
