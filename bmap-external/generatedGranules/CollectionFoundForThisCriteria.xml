@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><results><hits>1</hits><took>4</took><result concept-id="C1538765745-ORNL_DAAC" format="application/echo10+xml" revision-id="1"><Collection>
+            <ShortName>Polarimetric_CT_1601</ShortName>
+            <VersionId>1</VersionId>
+            <InsertTime>2018-07-20T00:00:00Z</InsertTime>
+            <LastUpdate>2018-07-23T13:15:43Z</LastUpdate>
+            <LongName>AfriSAR: Canopy Structure Derived from PolInSAR and Coherence TomoSAR NISAR tools</LongName>
+            <DataSetId>AfriSAR: Canopy Structure Derived from PolInSAR and Coherence TomoSAR NISAR tools</DataSetId>
+            <Description>This dataset contains forest vertical structure and associated uncertainty products derived by applying multi-baseline Polarimetric Interferometric Synthetic Aperture Radar (PolInSAR) and Polarimetric Coherence Tomographic SAR (PCT or PC-TomoSAR) techniques. The data were collected from multiple repeat-pass flights over Gabonese forests using the Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR) instrument in February-March 2016. In addition, supplementary data products based on various intermediate parameters of the UAVSAR data are provided and include radar backscatter, coherence, and viewing and terrain geometry. These data were collected by NASA as part of the joint NASA/ESA AfriSAR campaign.</Description>
+            <DOI>
+                <DOI>10.3334/ORNLDAAC/1601</DOI>
+                <Authority>https://doi.org</Authority>
+            </DOI>
+            <Orderable>false</Orderable>
+            <Visible>true</Visible>
+            <RevisionDate>2018-07-20T00:00:00Z</RevisionDate>
+            <ProcessingLevelId>3</ProcessingLevelId>
+            <ProcessingLevelDescription>Variables mapped on uniform space-time grid scales with completeness and consistency</ProcessingLevelDescription>
+            <ArchiveCenter>ORNL_DAAC</ArchiveCenter>
+            <CitationForExternalPublication>Lavalle, M., B.V. Riel, G. Shiroma, and B.P. Hawkins. 2018. AfriSAR: Canopy Structure Derived from PolInSAR and Coherence TomoSAR NISAR tools. ORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/1601</CitationForExternalPublication>
+            <CollectionState>COMPLETE</CollectionState>
+            <MaintenanceAndUpdateFrequency>As needed</MaintenanceAndUpdateFrequency>
+            <Price>0</Price>
+            <Temporal>
+                <RangeDateTime>
+                    <BeginningDateTime>2016-02-25T00:00:00Z</BeginningDateTime>
+                    <EndingDateTime>2016-03-08T23:59:59Z</EndingDateTime>
+                </RangeDateTime>
+            </Temporal>
+            <Contacts>
+                <Contact>
+                    <Role>ARCHIVER</Role>
+                    <OrganizationName>ORNL_DAAC</OrganizationName>
+                    <OrganizationAddresses>
+                        <Address>
+                            <StreetAddress>ORNL DAAC User Services Office, P.O. Box 2008, MS 6407, Oak Ridge National Laboratory</StreetAddress>
+                            <City>Oak Ridge</City>
+                            <StateProvince>Tennessee</StateProvince>
+                            <PostalCode>37831-6407</PostalCode>
+                            <Country>USA</Country>
+                        </Address>
+                    </OrganizationAddresses>
+                    <OrganizationPhones>
+                        <Phone>
+                            <Number>(865) 241-3952</Number>
+                            <Type>Direct Line</Type>
+                        </Phone>
+                    </OrganizationPhones>
+                    <OrganizationEmails>
+                        <Email>uso@daac.ornl.gov</Email>
+                    </OrganizationEmails>
+                </Contact>
+            </Contacts>
+            <ScienceKeywords>
+                <ScienceKeyword>
+                    <CategoryKeyword>EARTH SCIENCE</CategoryKeyword>
+                    <TopicKeyword>BIOSPHERE</TopicKeyword>
+                    <TermKeyword>ECOSYSTEMS</TermKeyword>
+                    <VariableLevel1Keyword>
+                        <Value>TERRESTRIAL ECOSYSTEMS</Value>
+                        <VariableLevel2Keyword>
+                            <Value>FORESTS</Value>
+                        </VariableLevel2Keyword>
+                    </VariableLevel1Keyword>
+                </ScienceKeyword>
+                <ScienceKeyword>
+                    <CategoryKeyword>EARTH SCIENCE</CategoryKeyword>
+                    <TopicKeyword>BIOSPHERE</TopicKeyword>
+                    <TermKeyword>VEGETATION</TermKeyword>
+                    <VariableLevel1Keyword>
+                        <Value>CANOPY CHARACTERISTICS</Value>
+                    </VariableLevel1Keyword>
+                </ScienceKeyword>
+                <ScienceKeyword>
+                    <CategoryKeyword>EARTH SCIENCE</CategoryKeyword>
+                    <TopicKeyword>BIOSPHERE</TopicKeyword>
+                    <TermKeyword>VEGETATION</TermKeyword>
+                    <VariableLevel1Keyword>
+                        <Value>FOREST COMPOSITION/VEGETATION STRUCTURE</Value>
+                    </VariableLevel1Keyword>
+                </ScienceKeyword>
+                <ScienceKeyword>
+                    <CategoryKeyword>EARTH SCIENCE</CategoryKeyword>
+                    <TopicKeyword>LAND SURFACE</TopicKeyword>
+                    <TermKeyword>TOPOGRAPHY</TermKeyword>
+                    <VariableLevel1Keyword>
+                        <Value>TOPOGRAPHIC EFFECTS</Value>
+                    </VariableLevel1Keyword>
+                </ScienceKeyword>
+            </ScienceKeywords>
+            <Platforms>
+                <Platform>
+                    <ShortName>G-III</ShortName>
+                    <LongName>Gulfstream III</LongName>
+                    <Type>Aircraft</Type>
+                    <Instruments>
+                        <Instrument>
+                            <ShortName>UAVSAR</ShortName>
+                            <LongName>Uninhabited Aerial Vehicle Synthetic Aperture Radar</LongName>
+                        </Instrument>
+                    </Instruments>
+                </Platform>
+            </Platforms>
+            <Campaigns>
+                <Campaign>
+                    <ShortName>AfriSAR</ShortName>
+                    <LongName>AfriSAR</LongName>
+                </Campaign>
+            </Campaigns>
+            <OnlineAccessURLs>
+                <OnlineAccessURL>
+                    <URL>https://daac.ornl.gov/daacdata/afrisar/Polarimetric_CT/</URL>
+                    <URLDescription>This link allows direct data access via Earthdata login</URLDescription>
+                </OnlineAccessURL>
+            </OnlineAccessURLs>
+            <OnlineResources>
+                <OnlineResource>
+                    <URL>https://daac.ornl.gov/AFRISAR/guides/Polarimetric_CT.html</URL>
+                    <Description>ORNL DAAC Data Set Documentation</Description>
+                    <Type>USER'S GUIDE</Type>
+                </OnlineResource>
+                <OnlineResource>
+                    <URL>https://doi.org/10.3334/ORNLDAAC/1601</URL>
+                    <Description>Data set Landing Page DOI URL</Description>
+                    <Type>DATA SET LANDING PAGE</Type>
+                </OnlineResource>
+                <OnlineResource>
+                    <URL>https://daac.ornl.gov/daacdata/afrisar/Polarimetric_CT/comp/AfriSAR_PolInSARWorkshop_Lavalle.pdf</URL>
+                    <Description>A document in .pdf format which provides information on the UAVSAR and PCT processes</Description>
+                    <Type>GENERAL DOCUMENTATION</Type>
+                </OnlineResource>
+                <OnlineResource>
+                    <URL>https://daac.ornl.gov/daacdata/afrisar/Polarimetric_CT/comp/Polarimetric_CT.pdf</URL>
+                    <Description>The guide document in .pdf format</Description>
+                    <Type>GENERAL DOCUMENTATION</Type>
+                </OnlineResource>
+                <OnlineResource>
+                    <URL>https://daac.ornl.gov/AFRISAR/guides/Polarimetric_CT_Fig1.png</URL>
+                    <Description>Sites where polarimetric-tomographic UAVSAR data were acquired during the 2016 AfriSAR airborne campaign. Red rectangles show the extension of the area covered by UAVSAR. The inset shows the RGB composition of the VV, HV and HH backscatter for a 225 km2 patch within the Lope National Park UAVSAR swath (Figure from Lavalle et al., 2017).</Description>
+                    <Type>GET RELATED VISUALIZATION</Type>
+                    <MimeType>image/png</MimeType>
+                </OnlineResource>
+            </OnlineResources>
+            <Spatial>
+                <SpatialCoverageType>HORIZONTAL</SpatialCoverageType>
+                <HorizontalSpatialDomain>
+                    <Geometry>
+                        <CoordinateSystem>CARTESIAN</CoordinateSystem>
+                        <BoundingRectangle>
+                            <WestBoundingCoordinate>9.17</WestBoundingCoordinate>
+                            <NorthBoundingCoordinate>0.61</NorthBoundingCoordinate>
+                            <EastBoundingCoordinate>11.86</EastBoundingCoordinate>
+                            <SouthBoundingCoordinate>-2.07</SouthBoundingCoordinate>
+                        </BoundingRectangle>
+                    </Geometry>
+                </HorizontalSpatialDomain>
+                <GranuleSpatialRepresentation>CARTESIAN</GranuleSpatialRepresentation>
+            </Spatial>
+        </Collection></result></results>

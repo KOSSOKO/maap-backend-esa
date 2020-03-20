@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Granule>
+    <GranuleUR>biosar1_105_SLC_HH</GranuleUR>
+    <InsertTime>2019-01-30T14:19:03</InsertTime>
+    <LastUpdate>2019-01-30T14:19:03</LastUpdate>
+    <Collection>
+        <ShortName>biosar1</ShortName>
+        <VersionId>1</VersionId>
+    
+    </Collection>
+    <DataGranule>
+        <SizeMBDataGranule>91.63719940185547</SizeMBDataGranule>
+        <DayNightFlag>BOTH</DayNightFlag>
+        <ProductionDateTime>2007-03-09T09:32:00</ProductionDateTime>
+    </DataGranule>
+    <Temporal>
+        <RangeDateTime>
+            <BeginningDateTime>2007-03-09T09:32:00</BeginningDateTime>
+            <EndingDateTime>2007-03-09T09:32:00</EndingDateTime>
+        </RangeDateTime>
+    </Temporal>
+    <Spatial>
+        <HorizontalSpatialDomain>
+            <Geometry>
+                <GPolygon>
+                    <Boundary>
+                        <Point>
+                            <PointLongitude>1471</PointLongitude>
+                            <PointLatitude>7962</PointLatitude>
+                        </Point>
+                    </Boundary>
+                </GPolygon>
+            </Geometry>
+        </HorizontalSpatialDomain>
+    </Spatial>
+    <MeasuredParameters>
+        <MeasuredParameter>
+            <ParameterName>FORESTS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>CANOPY CHARACTERISTICS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>FOREST COMPOSITION/VEGETATION STRUCTURE</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>TOPOGRAPHIC EFFECTS</ParameterName>
+        </MeasuredParameter>
+        <MeasuredParameter>
+            <ParameterName>BIOMASS</ParameterName>
+        </MeasuredParameter>
+    </MeasuredParameters>
+    <Campaigns>
+        <Campaign>
+            <ShortName>biosar1</ShortName>
+        </Campaign>
+    </Campaigns>
+    <AdditionalAttributes>
+        <AdditionalAttribute>
+            <Name>Polarisation</Name>
+            <Values>
+                <Value>HH</Value>
+            </Values>
+        </AdditionalAttribute>
+        <AdditionalAttribute>
+            <Name>SubRegion</Name>
+            <Values>
+                <Value>No sub Region set</Value>
+            </Values>
+        </AdditionalAttribute>
+        <AdditionalAttribute>
+            <Name>Processing_level</Name>
+            <Values>
+                <Value>L1</Value>
+            </Values>
+        </AdditionalAttribute>
+        <AdditionalAttribute>
+            <Name>Processing_level_description</Name>
+            <Values>
+                <Value>Unpacked, reformatted level 0 data, with all supplemental information to be used in subsequent processing appended. Optional radiometric and geometric correction applied to produce parameters in physical units. </Value>
+            </Values>
+        </AdditionalAttribute>
+        <AdditionalAttribute>
+            <Name>Geometry_type</Name>
+            <Values>
+                <Value>non-georeferenced</Value>
+            </Values>
+        </AdditionalAttribute>
+        <AdditionalAttribute>
+            <Name>Instrument</Name>
+            <Values>
+                <Value>E-SAR system</Value>
+            </Values>
+        </AdditionalAttribute>
+    </AdditionalAttributes>
+    <Price>0</Price>
+    <OnlineAccessURLs>
+        <OnlineAccessURL>
+            <URL>https://oss.eu-west-0.prod-cloud-ocb.orange-business.com/bmap-catalogue-data/Campaign_data/biosar1/biosar1_105_SLC_HH.tiff</URL>
+            <URLDescription>This link provides direct download access to the granule.</URLDescription>
+            <MimeType>MimeType</MimeType>
+        </OnlineAccessURL>
+    </OnlineAccessURLs>
+    <Orderable>false</Orderable>
+    <DataFormat>GTiff</DataFormat>
+</Granule>
